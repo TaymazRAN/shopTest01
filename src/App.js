@@ -6,6 +6,8 @@ import Welcome from "./components/Welcome";
 import Event from "./components/Event";
 import Login from "./components/Login";
 import CarLIst from "./components/CarLIst";
+import ComA from "./components/TestCss/ComA";
+import ComB from "./components/TestCss/ComB";
 // import Header from "./components/Header";
 // import Slideshow from './components/Slideshow';
 // import Card from './components/Card';
@@ -23,7 +25,11 @@ function App() {
 
       <Event /> */}
       {/* <Login level={"tttt"} /> */}
-      <CarLIst />
+      {/* <CarLIst />
+       */}
+
+      {/* <ComA />
+      <ComB /> */}
     </>
   );
 }
