@@ -9,6 +9,7 @@ import CarLIst from "./components/CarLIst";
 import ComA from "./components/TestCss/ComA";
 import ComB from "./components/TestCss/ComB";
 import Counter from "./components/Counter";
+import Register from "./components/Register";
 // import Header from "./components/Header";
 // import Slideshow from './components/Slideshow';
 // import Card from './components/Card';
@@ -17,7 +18,8 @@ import Counter from "./components/Counter";
 function App() {
   return (
     <>
-      <Counter />
+      <Register />
+      {/* <Counter /> */}
 
       {/* <Header />      
       <Slideshow />
