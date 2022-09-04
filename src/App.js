@@ -9,33 +9,40 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 // import ComA from "./components/TestCss/ComA";
 // import ComB from "./components/TestCss/ComB";
 // import Counter from "./components/Counter";
-  import Register from "./components/Register";
+import Register from "./components/Register";
 //import Navtest from "./components/TestCss/Navtest";
 //import Contact from "./components/Contact";
- import Header from "./components/Header";
- import Slideshow from './components/Slideshow';
-import Card from './components/Card';
-import Footer from './components/Footer';
-import Products from './components/Products';
+import Header from "./components/Header";
+import Slideshow from "./components/Slideshow";
+import Card from "./components/Card";
+import Footer from "./components/Footer";
+import Products from "./components/Products";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 //import Navtest from "./components/Navtest";
-import Nopage from './components/Nopage';
+import Nopage from "./components/Nopage";
 import data from "./data/Card.json";
+// import UseCount from "./components/UseCount";
+import ContextApp from "./context/ContextApp";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <Header/>
-      <Slideshow/>
+        <ContextApp />
+        <Header />
+        <Slideshow />
         <Routes>
           <Route path="/" element={<Card data={data} />} />
           <Route path="Products" element={<Card data={data} />} />
-          <Route exact path="/Products/:id" element={<Products data={data} />} />
+          <Route
+            exact
+            path="/Products/:id"
+            element={<Products data={data} />}
+          />
           <Route path="Login" element={<Register />} />
           <Route path="*" element={<Nopage />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </>
   );
